@@ -1,0 +1,21 @@
+{
+  "name": "Finance Buddy",
+  "short_name": "FinanceBuddy",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#f8f9fa",
+  "theme_color": "#e83e8c",
+  "description": "Track balances, budgets, and ask AI-powered finance questions.",
+  "icons": [
+    {
+      "src": "assets/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#e83e8c">
+    <meta name="description" content="Finance Buddy – your friendly financial tracker powered by Google Apps Script.">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <title>Finance Buddy</title>
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="apple-touch-icon" href="assets/icons/icon-192.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-shell">
+        <header class="app-header">
+            <h1>💖 Finance Buddy</h1>
+            <p class="tagline">Your friendly financial tracker & advisor</p>
+        </header>
+
+        <main class="cards">
+            <section class="card" aria-live="polite">
+                <header class="card-header">
+                    <h2>Forecasted Balance</h2>
+                    <button id="refresh-balance-btn" class="icon-button" aria-label="Refresh balance">
+                        <span aria-hidden="true">⟳</span>
+                    </button>
+                </header>
+                <p id="balance-display" class="balance">$0.00</p>
+                <p class="balance-updated" id="balance-updated" hidden>Last updated just now</p>
+            </section>
+
+            <section class="card" aria-live="polite">
+                <header class="card-header">
+                    <h2>Budget Alerts</h2>
+                    <button id="check-alerts-btn" class="primary-button">Check Alerts</button>
+                </header>
+                <div id="alerts-display" class="alerts-display">No alerts right now.</div>
+            </section>
+
+            <section class="card">
+                <header class="card-header">
+                    <h2>Ask your AI Finance Buddy</h2>
+                </header>
+                <label class="visually-hidden" for="gemini-prompt">Ask a finance question</label>
+                <textarea
+                    id="gemini-prompt"
+                    minlength="3"
+                    rows="4"
+                    placeholder="e.g., Can I afford a $50 dinner this week?"
+                    autocomplete="off"
+                ></textarea>
+                <div class="button-row">
+                    <button id="ask-gemini-btn" class="primary-button">Ask Gemini Advisor</button>
+                    <button id="clear-gemini-btn" class="ghost-button" type="button">Clear</button>
+                </div>
+                <div id="gemini-response" class="response" role="status" aria-live="polite"></div>
+            </section>
+        </main>
+
+        <footer class="app-footer">
+            <small>Connected to your private Google Sheets data via Apps Script.</small>
+        </footer>
+    </div>
+
+    <div class="install-banner" id="install-banner" hidden>
+        <div>
+            <strong>Add Finance Buddy to your home screen</strong>
+            <p>Enjoy app-like access with offline support.</p>
+        </div>
+        <div class="button-row">
+            <button id="install-btn" class="primary-button">Install</button>
+            <button id="dismiss-install-btn" class="ghost-button" type="button">Not now</button>
+        </div>
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
