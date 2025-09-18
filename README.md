@@ -6,7 +6,7 @@ This repository now hosts the static, mobile-friendly front-end for the Finance 
 
 1. Deploy your Google Apps Script as a web app (`Deploy` → `New deployment`).
 2. Choose **"Anyone"** under access if you will host anonymously on GitHub Pages. If you must keep it private, protect the GitHub Pages site behind authentication instead.
-3. The current build uses `https://script.google.com/macros/s/AKfycbyWH0Lpl1MGCLwijTUO2dLwRvih59ZP8-b_ZnqKoAcVMb6ZHEqPPWZ3RZGPyRKBkoa_/exec`; update `script.js` if you redeploy and the URL changes.
+3. The current build uses `https://script.google.com/macros/s/AKfycbzuJc8ZRAoGaox9C52UTMwzZGyJmNfQdpEkw9qF9FXrXx-TVDQo_mP58yLJYx-S9sNk/exec`; update `script.js` if you redeploy and the URL changes.
 
 ## 2. Upload the files to GitHub
 
