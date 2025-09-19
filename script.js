@@ -1,5 +1,5 @@
 // ❗️ Replace with your deployed Google Apps Script URL (must allow anonymous access if using GitHub Pages)
-const API_URL = "https://script.google.com/macros/s/AKfycbzuJc8ZRAoGaox9C52UTMwzZGyJmNfQdpEkw9qF9FXrXx-TVDQo_mP58yLJYx-S9sNk/exec";
+const API_URL = "https://script.google.com/macros/s/AKfycbzMZy2WW7nbmfTIG2vqpIsK9x33X_qn9KjIK_8Y6FKv2vNx5OEBWn3FmrnwJWv85kY15w/exec";
 
 const selectors = {
     balanceDisplay: document.querySelector('#balance-display'),
